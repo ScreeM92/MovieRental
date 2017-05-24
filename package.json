@@ -1,0 +1,41 @@
+{
+    "name": "movie-rental",
+    "version": "1.0.0",
+    "description": "JavaScript Applications Project",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app/app.js",
+        "test": "start chrome http://localhost:3333/test/tests.html && http-server",
+        "testre": "node node_modules/mocha/bin/mocha  public/test/",
+        "bower": "bower install"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.15.2",
+        "cookie-parser": "^1.4.3",
+        "express": "^4.14.0",
+        "express-session": "^1.14.1",
+        "jquery": "^3.1.0",
+        "nedb": "^1.8.0",
+        "systemjs": "^0.19.38",
+        "systemjs-plugin-babel": "0.0.15",
+        "validate-obj": "^0.8.5",
+        "validator": "^6.0.0",
+        "bower": "^1.7.9"
+    },
+    "engines": {
+        "node": "6.5.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.8",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-csso": "^3.0.0",
+        "gulp-jshint": "^2.0.4",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "gulp-sass-lint": "^1.3.2",
+        "jshint": "^2.9.4"
+    }
+}

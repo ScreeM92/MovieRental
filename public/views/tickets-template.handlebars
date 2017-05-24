@@ -1,0 +1,17 @@
+<h1 class="page-title text-xs-center">All Tickets</h1>
+<div id="orders" class='container'>
+        {{#if tickets}}
+            {{#tickets}}
+                <div class="order col-xs-12 mb-30">
+                    <div class="order-titles">Username: {{_username}}</div>
+                    <div class="order-price">Email: ${{_email}}</div>
+                    <div class="order-price">Description: {{_message}}</div>
+                </div>   
+            {{/tickets}}
+        {{else}}
+        <div class="no-orders text-center">
+            <h2>No orders in the store yet</h2>
+            <img class="movie-cover" src="images/unhappy.png" alt="unhappy icon">
+        </div>
+        {{/if}}
+</div>

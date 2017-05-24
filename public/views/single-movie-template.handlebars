@@ -1,0 +1,37 @@
+<h1 class="page-title">{{_title}}</h1>
+<div class="container" id="single-movie-page">
+    <div class="single-movie-wrapper">
+        <div class="row text-primary">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5" id="single-movie-cover">
+                <img src="{{_imgURL}}" alt="movie cover">
+            </div>
+            <div class=" col-xs-0 col-sm-0 col-md-0 col-lg-7 text-primary" id="single-movie-info">
+                <p>
+                    <span class="text-primary"><b>Director: </b>{{_director}}</span>
+                    <span><b>Year: </b>{{_year}}</span>
+                    <span><b>Category: </b>{{_category}}</span>
+                    <span id="moviePrice"><b>Price: </b>{{_price}}$</span>
+                </p>
+                <p>
+                    <span><b>Description: </b>{{_description}}</span>
+                </p>
+
+                <div class="buttons">
+                    <div id="single-movie-info">
+                        <button class="btn btn-success" id="like-btn" type="submit">
+                            <i class="fa fa-thumbs-up fa-fw"></i>
+                            Like <i id='likes'>( {{likes}} )</i>
+                        </button>
+                    </div>
+                    <div  id="single-movie-cart">
+                        <button class="btn btn-red" id="add-to-cart-btn" movie-target="{{_id}}" type="submit">
+                            <i class="fa fa-cart-plus fa-fw"></i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
