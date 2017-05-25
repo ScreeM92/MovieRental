@@ -7,7 +7,7 @@
         "start": "node app/app.js",
         "test": "start chrome http://localhost:3333/test/tests.html && http-server",
         "testre": "node node_modules/mocha/bin/mocha  public/test/",
-        "bower": "bower install"
+        "postinstall": "bower install"
     },
     "author": "",
     "license": "ISC",
